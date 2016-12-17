@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  margin: 1em;
+
+  .avi {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .bubble {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding-bottom: 1em;
+    
+    .text{
+      display: flex;
+      align-content: center;
+      justify-content: flex-start;
+      padding-bottom: 1em;
+
+    }
+    .speech {
+
+    }
+}
+}

@@ -14,11 +14,11 @@ body {
   font: $base-text-size / 1 $base-font-family;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
-  header img {
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
+  .topHalf {
+    background-image: url('../components/OhSoLovely-Scallop2-01.png');
+    background-size: cover;
+    background-position: center;
   }
 }

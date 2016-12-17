@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import Header from './header.js'
+import Header from './header'
 // import Portfolio from './portfolio.js'
 // import Blogs from './blogs.js'
 // import SocialMedia from './socialmedia.js'
+import styles from '../styles/screen.scss'
 
 class App extends Component {
 
@@ -10,7 +11,8 @@ class App extends Component {
     super(props)
     this.state = {
       name: '',
-      avatar: ''
+      avatar: '',
+      bio: ''
     }
   }
 
@@ -21,14 +23,17 @@ class App extends Component {
     }).then((data) => {
       this.setState({
         name: data.name,
-        avatar_url: data.avatar_url
+        avatar_url: data.avatar_url,
+        bio: data.bio
       })
     })
   }
 
   render () {
-    return <div>
-      <Header name={this.state.name} avatar_url={this.state.avatar_url} />
+    return <div className={styles.root}>
+      <div className={styles.topHalf}>
+        <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio} />
+      </div>
       {/* <Portfolio />
       <Blogs />
       <SocialMedia /> */}
