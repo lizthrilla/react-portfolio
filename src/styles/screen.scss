@@ -15,6 +15,21 @@ body {
   justify-content: center;
   align-content: center;
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blogs {
+    .blogHead {
+      background-image: url('./glitterHello.png');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: auto;
+    }
+  }
+
   footer {
     text-align: center;
   }

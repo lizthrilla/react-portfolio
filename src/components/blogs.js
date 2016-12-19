@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
+import styles from '../styles/screen.scss'
 
 class Blogs extends Component {
 
+  static propTypes = {
+    blogTitle: React.PropTypes.string
+  }
+
   render () {
-    return <section>
-      <div className='blog1' />
-      <div className='blog2' />
-    </section>
+    return <div className={styles.blogOne}>
+      <div />
+      {/* <div className='blog2' /> */}
+    </div>
   }
 }
 

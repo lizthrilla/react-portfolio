@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './header'
 import Portfolio from './portfolio.js'
-import Blogs from './blogs.js'
+// import Blogs from './blogs.js'
 import SocialMedia from './socialmedia.js'
 import styles from '../styles/screen.scss'
 
@@ -15,8 +15,8 @@ class App extends Component {
       bio: '',
       email: '',
       url: '',
-      Linking: ''
-      // blog: []
+      Linking: '',
+      blogTitle: ''
     }
   }
 
@@ -32,16 +32,15 @@ class App extends Component {
         email: data.email
       })
     })
+    const MediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40liztiller'
+    window.fetch(MediumURL).then((response) => {
+      return response.json()
+    }).then((data) => {
+      this.setState({
+        blogTitle: data.title
+      })
+    })
   }
-  //   const MediumURL =
-  //   window.fetch(MediumURL).then((response) => {
-  //     return response.json()
-  //   }).then((data2) => {
-  //     this.setState({
-  //       blog: data.items
-  //     })
-  //   })
-
   // handleClick= () => {
   //   Linking.openURL(this.props.url)
   // }
@@ -53,7 +52,10 @@ class App extends Component {
           email={this.state.email} />
       </div>
       <Portfolio />
-      <Blogs />
+      <section className={styles.blogs}>
+        <div className={styles.blogHead} />
+        <div className={styles.blogText} />
+      </section>
       <SocialMedia />
       <footer>
         <h6> &copy; 2016 Liz Tiller.  Built at the Iron Yard - Tampa </h6>

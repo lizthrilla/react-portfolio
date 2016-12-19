@@ -19,10 +19,10 @@ class IconLink extends React.Component {
 class SocialMedia extends Component {
 
   render () {
-    return <div className={styles}>
+    return <div className={styles.media}>
       <h4> Stay Connected with Me! </h4>
       <ul className={styles.social}>
-        <li><IconLink icon='github' set='dev' url={'http://github.com/lizthrilla'} /> </li>
+        <li><IconLink icon='github_alt' set='dev' url={'http://github.com/lizthrilla'} /> </li>
         <li><IconLink icon='twitter' url={'http://twitter.com/liztiller'} /> </li>
         <li><IconLink icon='linkedin' url={'https://www.linkedin.com/in/elizabeth-tiller-3965298/'} /></li>
         <li><IconLink icon='medium' url={'https://medium.com/@liztiller'} /></li>

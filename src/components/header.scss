@@ -2,31 +2,31 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url('./OhSoLovely-Scallop2-01.png');
-  background-size: 100%;
+  // background-image: url('./glitterHello.png');
+  // background-size: 100%;
   margin: 0;
   width: 100%;
 
   .avi {
-    height: 235px;
-    width: 235px;
-    padding: 1em;
-    margin-top: 1em;
-    border-radius: 25px;
+    height: 220px;
+    width: auto;
+    margin: 1em;
+    margin-top: 2em;
+    border-radius: 10px;
   }
 
   .text {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto';
-    // align-content: center;
     background-color: hsla(0, 0%, 99%, 0.78);
     border-radius: 10px;
     width: 300px;
-    height: 225px;
+    height: auto;
     margin: 1em;
     margin-top: 2em;
     padding: 1em;
     padding-bottom: 0;
+    min-width: 200px;
   }
 }
