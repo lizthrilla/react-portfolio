@@ -6,8 +6,8 @@ ul {
   padding: 1em;
 
   li {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,15 +17,18 @@ ul {
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    color: goldenrod;
   }
 
   .memory {
     background-image: url('./memory.png');
     box-shadow: 10px 10px 5px #888;
     background-position: center;
+    filter: grayscale(0) blur(0);
+    transition: 0.3s ease-in-out;
 
     &:hover {
-      background-color: transparentize(grey, 0.5);
+      filter: grayscale(100%) blur(3px);
     }
   }
 
@@ -34,11 +37,27 @@ ul {
     box-shadow: 10px 10px 5px #888;
     background-position: center;
     border: 1px solid #888;
+    filter: grayscale(0) blur(0);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      filter: grayscale(100%) blur(3px);
+      color: goldenrod;
+      font-family: 'Roboto', san-serif;
+    }
   }
 
   .onelist {
     background-image: url('./goldenList.png');
     box-shadow: 10px 10px 5px #888;
     background-position: center;
+    filter: grayscale(0) blur(0);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      filter: grayscale(100%) blur(3px);
+      color: goldenrod;
+      font-family: 'Roboto', san-serif;
+    }
   }
 }

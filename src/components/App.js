@@ -40,6 +40,16 @@ class App extends Component {
         blogTitle: data.title
       })
     })
+
+    const RepoURL = 'https://api.github.com/users/lizthrilla/repos'
+    window.fetch(RepoURL).then((response) => {
+      return response.json()
+    }).then((data) => {
+      this.setState({
+        repos: data
+        // this.state.repos.find then javascript find for name "memory"
+      })
+    })
   }
 
   render () {
@@ -48,7 +58,7 @@ class App extends Component {
         <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio}
           email={this.state.email} />
       </div>
-      <Portfolio />
+      <Portfolio repos={this.state.repos} />
       <Blogs />
       <SocialMedia />
       <footer>
