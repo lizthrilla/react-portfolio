@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './header'
 import Portfolio from './portfolio.js'
-// import Blogs from './blogs.js'
+import Blogs from './blogs.js'
 import SocialMedia from './socialmedia.js'
 import styles from '../styles/screen.scss'
 
@@ -52,10 +52,7 @@ class App extends Component {
           email={this.state.email} />
       </div>
       <Portfolio />
-      <section className={styles.blogs}>
-        <div className={styles.blogHead} />
-        <div className={styles.blogText} />
-      </section>
+      <Blogs />
       <SocialMedia />
       <footer>
         <h6> &copy; 2016 Liz Tiller.  Built at The Iron Yard - Tampa </h6>

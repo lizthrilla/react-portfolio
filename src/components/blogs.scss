@@ -1,6 +1,28 @@
 .blogs {
-  background-color: gold;
-  height: 100px;
-  width: 400px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .blogHead {
+    background-image: url('./goldGreyGeo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .blogText {
+    height: 110px;
+    width: 75%;
+    border: 1px solid #888;
+    border-radius: 0 0 10px 10px;
+
+    p {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Roboto Slab', serif;
+    }
+  }
 }

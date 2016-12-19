@@ -16,7 +16,7 @@ class Header extends Component {
         {/* <div className={styles.hello} /> */}
         <img className={styles.avi} src={this.props.avatar_url} />
         <div className={styles.text}>
-          <h2>{this.props.name}</h2>
+          <h1>{this.props.name}</h1>
           <p>{this.props.bio}</p>
         </div>
       </header>
