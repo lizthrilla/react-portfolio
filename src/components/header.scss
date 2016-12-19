@@ -2,10 +2,18 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  // background-image: url('./glitterHello.png');
-  // background-size: 100%;
+  background-image: url('./glitterHello.png');
+  background-size: 100%;
   margin: 0;
   width: 100%;
+
+  .hello {
+    background-image: url('./glitterHello.png');
+    background-size: 100%;
+    background-position: center;
+    height: 220px;
+    width: 220px;
+  }
 
   .avi {
     height: 220px;
