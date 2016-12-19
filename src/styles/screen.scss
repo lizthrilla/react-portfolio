@@ -10,15 +10,12 @@ html {
 body {
   @include font-smoothing(on);
 
-  // margin: 0;
+  margin: 0;
   font: $base-text-size / 1 $base-font-family;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 
-  .topHalf {
-    background-image: url('../components/OhSoLovely-Scallop2-01.png');
-    background-size: cover;
-    background-position: center;
+  footer {
+    text-align: center;
   }
 }

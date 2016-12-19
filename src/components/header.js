@@ -14,12 +14,11 @@ class Header extends Component {
     return <div className={styles.root}>
       <header>
         <img className={styles.avi} src={this.props.avatar_url} />
-        <div className={styles.bubble}>
-          <div className={styles.text}>
-            <h2>Hi, I'm {this.props.name}</h2>
-            <p>{this.props.bio}</p>
-          </div>
-          <img className={styles.speech} src='https://raw.githubusercontent.com/lizthrilla/portfolio/master/public/tri.png' />
+        <div className={styles.text}>
+          <h2>{this.props.name}</h2>
+          <p>{this.props.bio}</p>
+          <h5>email?</h5>
+          {/* <img className={styles.speech} src='https://raw.githubusercontent.com/lizthrilla/portfolio/master/public/tri.png' /> */}
         </div>
       </header>
     </div>

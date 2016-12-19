@@ -1,28 +1,31 @@
 header {
   display: flex;
-  margin: 1em;
+  justify-content: center;
+  align-content: center;
+  background-image: url('./OhSoLovely-Scallop2-01.png');
+  background-size: 100%;
+  margin: 0;
+  width: 100%;
 
   .avi {
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
+    height: 235px;
+    width: 235px;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 25px;
   }
 
-  .bubble {
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    padding-bottom: 1em;
-    
-    .text{
-      display: flex;
-      align-content: center;
-      justify-content: flex-start;
-      padding-bottom: 1em;
-
-    }
-    .speech {
-
-    }
-}
+  .text {
+    justify-content: center;
+    align-items: center;
+    // align-content: center;
+    background-color: hsla(0, 0%, 99%, 0.78);
+    border-radius: 10px;
+    width: 300px;
+    height: 225px;
+    margin: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    padding-bottom: 0;
+  }
 }

@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
+import styles from './socialmedia.scss'
 
 class SocialMedia extends Component {
 
   render () {
-    return <footer>
+    return <div className={styles}>
       <h4> Stay Connected with Me! </h4>
       <ul>
-        <li>linkedin</li>
-        <li>Twitter</li>
-        <li>medium</li>
+        <li className={styles.social}>github</li>
+        <li className={styles.social}>Twitter</li>
+        <li className={styles.social}>medium</li>
+        <li className={styles.social}>twitter</li>
       </ul>
-    </footer>
+    </div>
   }
 }
 
