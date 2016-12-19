@@ -2,42 +2,38 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   flex-direction: row;
-  background-image: url('./OhSoLovely-Geo-Deer-Desktops 3-01.png');
-  background-position: center;
-  background-size: 70%;
-  background-repeat: no-repeat;
   margin: 0;
-  width: 100%;
-
-  // .hello {
-  //   background-image: url('./ohsolovely-hello-desktop-10-10.png');
-  //   background-position: center;
-  //   background-size: 250%;
-  //   background-repeat: no-repeat;
-  //   height: auto;
-  //   width: 400px;
-  //   margin-top: 2em;
-  // }
+  padding: 0;
+  background-image: url('./geoDeer1.png');
+  background-position: left;
+  background-size: 65%;
+  position: relative;
+  width: 95%;
 
   .avi {
-    height: 220px;
-    width: auto;
-    margin-top: 2em;
-    border-radius: 10px;
-    margin-left: 3em;
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+    margin: 1em;
+    padding-top: 1em;
   }
 
   .text {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto';
-    background-color: hsla(0, 0%, 99%, 0.78);
+    background-color: hsla(0, 0%, 99%, 0.09);
     border-radius: 10px;
+    height: 150px;
     width: 300px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    min-width: 200px;
+    margin: 1em;
+    padding-top: 1em;
+
+    h2 {
+      font-family: 'Robot-Slab', serif;
+      color: goldenrod;
+    }
   }
 }

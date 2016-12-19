@@ -10,25 +10,16 @@ html {
 body {
   @include font-smoothing(on);
 
-  margin: 1em;
+  margin: 2em;
   font: $base-text-size / 1 $base-font-family;
   justify-content: center;
+  align-items: center;
   align-content: center;
-  border: 2px solid yellow;
+  border: 2px solid goldenrod;
 
   a {
     text-decoration: none;
     color: black;
-  }
-
-  .blogs {
-    .blogHead {
-      background-image: url('./glitterHello.png');
-      background-size: cover;
-      background-position: center;
-      height: 200px;
-      width: auto;
-    }
   }
 
   footer {

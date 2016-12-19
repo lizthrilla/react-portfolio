@@ -2,12 +2,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1em;
-  margin-right: 2em;
+  margin: 2em;
+  padding: 1em;
 
   li {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,14 +29,15 @@ ul {
     }
   }
 
-  .onelist {
-    background-image: url('./One_List_React.png');
-    box-shadow: 10px 10px 5px #888;
-    background-position: center;
-  }
-
   .tictac {
     background-image: url('./Tic_Tac_Toe.png');
+    box-shadow: 10px 10px 5px #888;
+    background-position: center;
+    border: 1px solid #888;
+  }
+
+  .onelist {
+    background-image: url('./goldenList.png');
     box-shadow: 10px 10px 5px #888;
     background-position: center;
   }

@@ -12,9 +12,9 @@ class Portfolio extends Component {
   render () {
     return <section className={styles.root}>
       <ul>
-        <li className={styles.memory}><a href='http://memory.lizthrilla.surge.sh/' /></li>
-        <li className={styles.onelist} />
+        <li className={styles.memory}><a href='http://memory.lizthrilla.surge.sh/'> Memory </a> /></li>
         <li className={styles.tictac} />
+        <li className={styles.onelist} />
       </ul>
     </section>
   }
