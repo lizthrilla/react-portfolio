@@ -2,25 +2,30 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url('./glitterHello.png');
-  background-size: 100%;
+  flex-direction: row;
+  background-image: url('./OhSoLovely-Geo-Deer-Desktops 3-01.png');
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
   margin: 0;
   width: 100%;
 
-  .hello {
-    background-image: url('./glitterHello.png');
-    background-size: 100%;
-    background-position: center;
-    height: 220px;
-    width: 220px;
-  }
+  // .hello {
+  //   background-image: url('./ohsolovely-hello-desktop-10-10.png');
+  //   background-position: center;
+  //   background-size: 250%;
+  //   background-repeat: no-repeat;
+  //   height: auto;
+  //   width: 400px;
+  //   margin-top: 2em;
+  // }
 
   .avi {
     height: 220px;
     width: auto;
-    margin: 1em;
     margin-top: 2em;
     border-radius: 10px;
+    margin-left: 3em;
   }
 
   .text {
@@ -31,10 +36,8 @@ header {
     border-radius: 10px;
     width: 300px;
     height: auto;
-    margin: 1em;
-    margin-top: 2em;
-    padding: 1em;
-    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
     min-width: 200px;
   }
 }

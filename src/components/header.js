@@ -13,12 +13,11 @@ class Header extends Component {
   render () {
     return <div className={styles.root}>
       <header>
-        <img className={styles.hello} />
+        {/* <div className={styles.hello} /> */}
         <img className={styles.avi} src={this.props.avatar_url} />
         <div className={styles.text}>
           <h2>{this.props.name}</h2>
           <p>{this.props.bio}</p>
-          <h5>email?</h5>
         </div>
       </header>
     </div>

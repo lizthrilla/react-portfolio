@@ -10,10 +10,11 @@ html {
 body {
   @include font-smoothing(on);
 
-  margin: 0;
+  margin: 1em;
   font: $base-text-size / 1 $base-font-family;
   justify-content: center;
   align-content: center;
+  border: 2px solid yellow;
 
   a {
     text-decoration: none;
