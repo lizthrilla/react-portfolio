@@ -41,9 +41,6 @@ class App extends Component {
       })
     })
   }
-  // handleClick= () => {
-  //   Linking.openURL(this.props.url)
-  // }
 
   render () {
     return <div className={styles.root}>
