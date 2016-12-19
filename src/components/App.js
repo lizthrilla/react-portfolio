@@ -13,7 +13,10 @@ class App extends Component {
       name: '',
       avatar: '',
       bio: '',
-      email: ''
+      email: '',
+      url: '',
+      Linking: ''
+      // blog: []
     }
   }
 
@@ -29,15 +32,19 @@ class App extends Component {
         email: data.email
       })
     })
-    const hubURL = 'https://api.github.com/users/lizthrilla/repos'
-    window.fetch(hubURL).then((response) => {
-      return response.json()
-    }).then((data2) => {
-      this.setState({
-        html_url: data2.html_url
-      })
-    })
   }
+  //   const MediumURL =
+  //   window.fetch(MediumURL).then((response) => {
+  //     return response.json()
+  //   }).then((data2) => {
+  //     this.setState({
+  //       blog: data.items
+  //     })
+  //   })
+
+  // handleClick= () => {
+  //   Linking.openURL(this.props.url)
+  // }
 
   render () {
     return <div className={styles.root}>

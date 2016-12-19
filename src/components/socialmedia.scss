@@ -1,32 +1,14 @@
 h4 {
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
-.github {
-  background-image: url('./github.svg');
-  background-position: center;
-  height: 75px;
-  width: 75px;
-  // border-radius: 50px;
-}
-
-.twitter {
-  background-image: url('./Twitter_Logo_Blue.svg');
-  background-position: center;
-  height: 75px;
-  width: 75px;
-}
-
-.medium {
-  background-image: url('./medium-m-light-100px.png');
-  background-position: center;
-  height: 75px;
-  width: 75px;
-}
-
-.linkedin {
-  background-image: url('./In-Black-128px-R.png');
-  background-position: center;
-  height: 50px;
-  width: 50px;
+.social {
+  font-size: 40px;
+  color: black;
+  flex: 1;
+  text-decoration: none;
+  outline-style: none;
+  margin: 0;
 }
