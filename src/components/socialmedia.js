@@ -7,10 +7,10 @@ class SocialMedia extends Component {
     return <div className={styles}>
       <h4> Stay Connected with Me! </h4>
       <ul>
-        <li className={styles.social}>github</li>
-        <li className={styles.social}>Twitter</li>
-        <li className={styles.social}>medium</li>
-        <li className={styles.social}>twitter</li>
+        <li className={styles.github} />
+        <li className={styles.twitter} />
+        <li className={styles.medium} />
+        <li className={styles.linkedin} />
       </ul>
     </div>
   }

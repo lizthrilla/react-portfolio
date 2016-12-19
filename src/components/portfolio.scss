@@ -22,6 +22,7 @@ ul {
   .memory {
     background-image: url('./memory.png');
     box-shadow: 10px 10px 5px #888;
+    background-position: center;
 
     &:hover {
       background-color: transparentize(grey, 0.5);
@@ -31,10 +32,12 @@ ul {
   .onelist {
     background-image: url('./One_List_React.png');
     box-shadow: 10px 10px 5px #888;
+    background-position: center;
   }
 
   .tictac {
     background-image: url('./Tic_Tac_Toe.png');
     box-shadow: 10px 10px 5px #888;
+    background-position: center;
   }
 }
