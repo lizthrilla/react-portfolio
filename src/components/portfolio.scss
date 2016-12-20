@@ -29,6 +29,7 @@ ul {
 
     &:hover {
       filter: grayscale(100%) blur(3px);
+      text-align: center;
     }
   }
 
@@ -39,6 +40,7 @@ ul {
     border: 1px solid #888;
     filter: grayscale(0) blur(0);
     transition: 0.3s ease-in-out;
+    color: goldenrod;
 
     &:hover {
       filter: grayscale(100%) blur(3px);

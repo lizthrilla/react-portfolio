@@ -34,15 +34,15 @@ class Portfolio extends Component {
   render () {
     // const isHover = this.props.isHover ? styles.hover : styles.noHover
     return <section className={styles.root}>
-      {/* {this.state.description} */}
+      <h3> {this.state.description}</h3>
 
       <ul>
-        <li className={styles.memory}
-          onMouseOver={() => this.mouseOver('memory')} onMouseOut={() => this.mouseOut()}>
+        <li className={styles.memory}onMouseOver={() => this.mouseOver('memory')} onMouseOut={() => this.mouseOut()}>
           {/* <a href='http://memory.lizthrilla.surge.sh/'>
             <span className={styles.memory}> {this.state.description} </span>
           </a> */}
-          {this.state.description}
+          <p> whatever
+          </p>
         </li>
 
         <li className={styles.tictac}
