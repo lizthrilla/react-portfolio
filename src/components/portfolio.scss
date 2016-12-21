@@ -1,4 +1,4 @@
-ul {
+.portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,60 +6,44 @@ ul {
   padding: 1em;
 
   li {
+    list-style: none;
     height: 200px;
     width: 200px;
     border-radius: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    list-style: none;
     margin: 1em;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    color: goldenrod;
-  }
-
-  .memory {
-    background-image: url('./memory.png');
+    transition: 0.5s ease-in-out;
     box-shadow: 10px 10px 5px #888;
-    background-position: center;
-    filter: grayscale(0) blur(0);
-    transition: 0.3s ease-in-out;
+    color: transparent;
 
     &:hover {
-      filter: grayscale(100%) blur(3px);
-      text-align: center;
+      background-color: #b3ab9e;
+      color: black;
+      // opacity: 1;
+    }
+
+    p {
+      padding: 10px;
+    }
+
+    .colorPicker {
+      background-image: url('./color_picker.png');
+    }
+
+    .memory {
+      background-image: url('./Memory.png');
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
     }
   }
 
   .tictac {
-    background-image: url('./Tic_Tac_Toe.png');
-    box-shadow: 10px 10px 5px #888;
-    background-position: center;
-    border: 1px solid #888;
-    filter: grayscale(0) blur(0);
-    transition: 0.3s ease-in-out;
-    color: goldenrod;
-
-    &:hover {
-      filter: grayscale(100%) blur(3px);
-      color: goldenrod;
-      font-family: 'Roboto', san-serif;
-    }
+    // background-image: url('./Tic_Tac_Toe.png');
   }
 
   .onelist {
-    background-image: url('./goldenList.png');
-    box-shadow: 10px 10px 5px #888;
-    background-position: center;
-    filter: grayscale(0) blur(0);
-    transition: 0.3s ease-in-out;
-
-    &:hover {
-      filter: grayscale(100%) blur(3px);
-      color: goldenrod;
-      font-family: 'Roboto', san-serif;
-    }
+    // background-image: url('./goldenList.png');
   }
 }

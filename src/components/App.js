@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Header from './header'
-import Portfolio from './portfolio.js'
-import Blogs from './blogs.js'
-import SocialMedia from './socialmedia.js'
+import Portfolio from './portfolio'
+import Blogs from './blogs'
+import SocialMedia from './socialmedia'
 import styles from '../styles/screen.scss'
 
 class App extends Component {
@@ -13,10 +13,7 @@ class App extends Component {
       name: '',
       avatar: '',
       bio: '',
-      email: '',
-      url: '',
-      Linking: '',
-      blogTitle: ''
+      email: ''
     }
   }
 
@@ -61,6 +58,7 @@ class App extends Component {
       <Portfolio repos={this.state.repos} />
       <Blogs />
       <SocialMedia />
+      <div className={styles.antlers} />
       <footer>
         <h6> &copy; 2016 Liz Tiller.  Built at The Iron Yard - Tampa </h6>
       </footer>
