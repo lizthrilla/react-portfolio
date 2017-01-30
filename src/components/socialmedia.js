@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import styles from './socialmedia.scss'
+// import styles from './socialmedia.scss'
+import styles from '../styles/screen.scss'
 
 class IconLink extends React.Component {
   static propTypes= {
@@ -20,7 +21,7 @@ class SocialMedia extends Component {
 
   render () {
     return <div className={styles.root}>
-      <h4> Stay Connected with Me! </h4>
+      <h3> Stay Connected with Me! </h3>
       <ul className={styles.social}>
         <li><IconLink icon='github_alt' set='dev' url={'http://github.com/lizthrilla'} /> </li>
         <li><IconLink icon='twitter' url={'http://twitter.com/liztiller'} /> </li>

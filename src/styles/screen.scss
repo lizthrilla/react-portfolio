@@ -5,28 +5,28 @@ $base-font-family: 'Roboto', sans-serif;
 
 html {
   text-size-adjust: 100%;
-  height: 100vh;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
 }
 
 body {
   @include font-smoothing(on);
 
-  margin: 3em;
-  min-height: 100vh;
+  margin: 0;
   font: $base-text-size / 1 $base-font-family;
-  justify-content: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
+  justify-content: center;
+}
+
+.main {
   border: 2px solid goldenrod;
-
-  li {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
+  margin: 1em;
 
   .antlers {
     background-image: url('./geoAntlers.png');
@@ -46,4 +46,113 @@ body {
     margin: 0;
     padding: 0;
   }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-image: url('./geoDeer1.png');
+  background-position: left;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .avi {
+    height: 200px;
+    width: 200px;
+    margin: 0.5em;
+    border-radius: 10px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .text {
+    font-family: 'Roboto';
+    height: 200px;
+    width: 200px;
+    // background-color: #888;
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0;
+
+    p {
+      max-width: 200px;
+      height: auto;
+    }
+  }
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em;
+
+  li {
+    height: 200px;
+    width: 200px;
+    list-style: none;
+    margin: 1em;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 10px 10px 5px #888;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      position: center;
+    }
+
+    .imageText {
+      position: absolute;
+      top: 1px;
+      margin: 1em;
+
+      a,
+      & p {
+        visibility: hidden;
+      }
+    }
+
+    &:hover {
+      background-color: #b3ab9e;
+      color: black;
+      // border-radius: 10px;
+
+      img {
+        filter: brightness(0.4) blur(5px) opacity(0.6);
+      }
+
+      a,
+      & p {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.social {
+  font-size: 40px;
+  min-width: 50vw;
+  color: black;
+  padding: 1em;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0;
 }

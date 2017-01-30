@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styles from './header.scss'
-// import styles from '../styles/screen.scss'
+import styles from '../styles/screen.scss'
+// import styles from './header.scss'
 
 class Header extends Component {
 
@@ -11,16 +11,14 @@ class Header extends Component {
 
   }
   render () {
-    return <div className={styles.root}>
-      <header>
-        {/* <div className={styles.hello} /> */}
-        <img className={styles.avi} src={this.props.avatar_url} />
-        <div className={styles.text}>
-          <h1>{this.props.name}</h1>
-          <p>{this.props.bio}</p>
-        </div>
-      </header>
-    </div>
+    return <header>
+      {/* <div className={styles.deer} /> */}
+      <img className={styles.avi} src={this.props.avatar_url} />
+      <div className={styles.text}>
+        <h1>{this.props.name}</h1>
+        <p>{this.props.bio}</p>
+      </div>
+    </header>
   }
 }
 

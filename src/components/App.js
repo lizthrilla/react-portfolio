@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './header'
 import Portfolio from './portfolio'
-import Blogs from './blogs'
+// import Blogs from './blogs'
 import SocialMedia from './socialmedia'
 import styles from '../styles/screen.scss'
 
@@ -50,18 +50,16 @@ class App extends Component {
   }
 
   render () {
-    return <div className={styles.root}>
-      <div className={styles.topHalf}>
-        <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio}
-          email={this.state.email} />
-      </div>
+    return <div className={styles.main}>
+      <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio}
+        email={this.state.email} />
       <Portfolio repos={this.state.repos} />
-      <Blogs />
-      <SocialMedia />
-      <div className={styles.antlers} />
+      {/* <Blogs /> */}
+      {/* <SocialMedia />
+      <div className={styles.antlers}>whatever</div>
       <footer>
-        <h6> &copy; 2016 Liz Tiller.  Built at The Iron Yard - Tampa </h6>
-      </footer>
+        <h6> &copy; 2017 Liz Tiller</h6>
+      </footer> */}
     </div>
   }
 }

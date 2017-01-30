@@ -1,20 +1,24 @@
 import React, { Component } from 'react'
-import styles from './portfolio.scss'
+import styles from '../styles/screen.scss'
+// import styles from './portfolio.scss'
+// import Images from './Images.js'
+import data from './data.js'
 
 class Portfolio extends Component {
 
   render () {
-    return <section className={styles.root}>
-
-      <ul className={styles.portfolio}>
-        <li className={styles.colorPicker}>
-          <p className={styles.blurb}> A Javascript color picker </p>
+    return <ul className={styles.portfolio}>
+      {data.examples.map((example, i) => {
+        return <li key={i}>
+          <img src={example.image} />
+          <div className={styles.imageText}>
+            <h4><a href={example.website}>{example.title}</a></h4>
+            <p>{example.description}</p>
+          </div>
         </li>
-        <li className={styles.tictactoe} />
-        <li className={styles.onelist} />
-        <li className={styles.memory} />
-      </ul>
-    </section>
+      })}
+
+    </ul>
   }
 }
 
