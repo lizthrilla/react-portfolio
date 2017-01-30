@@ -20,7 +20,7 @@ class IconLink extends React.Component {
 class SocialMedia extends Component {
 
   render () {
-    return <div className={styles.root}>
+    return <div>
       <h3> Stay Connected with Me! </h3>
       <ul className={styles.social}>
         <li><IconLink icon='github_alt' set='dev' url={'http://github.com/lizthrilla'} /> </li>

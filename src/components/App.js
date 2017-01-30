@@ -55,11 +55,11 @@ class App extends Component {
         email={this.state.email} />
       <Portfolio repos={this.state.repos} />
       {/* <Blogs /> */}
-      {/* <SocialMedia />
-      <div className={styles.antlers}>whatever</div>
+      <SocialMedia />
+      <div className={styles.antlers} />
       <footer>
         <h6> &copy; 2017 Liz Tiller</h6>
-      </footer> */}
+      </footer>
     </div>
   }
 }
