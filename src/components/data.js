@@ -15,12 +15,12 @@ const data = {
     {
       title: 'Memory',
       image: require('./appImages/Memory.png'),
-      descripton: 'A simple React memory game.',
+      description: 'A simple React memory game.',
       website: 'http://memory.lizthrilla.surge.sh'
     },
     {
       title: 'Make It Rain',
-      images: require('./appImages/rainApp.png'),
+      image: require('./appImages/rainApp.png'),
       description: 'Make it rain in the club!  Vanilla JS game.',
       website: 'http://rain.lizthrilla.surge.sh'
     // },
