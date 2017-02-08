@@ -4,6 +4,7 @@ import Portfolio from './portfolio'
 // import Blogs from './blogs'
 import SocialMedia from './socialmedia'
 import styles from '../styles/screen.scss'
+import Tarot from './Tarot'
 
 class App extends Component {
 
@@ -53,8 +54,10 @@ class App extends Component {
     return <div className={styles.main}>
       <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio}
         email={this.state.email} />
+      <Tarot />
       <Portfolio repos={this.state.repos} />
       {/* <Blogs /> */}
+      <Tarot />
       <SocialMedia />
       <div className={styles.antlers} />
       <footer>

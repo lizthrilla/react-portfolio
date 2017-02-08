@@ -106,7 +106,7 @@ header {
     position: relative;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
-    box-shadow: 10px 10px 5px #888;
+    box-shadow: 5px 5px 5px #888;
 
     img {
       height: 100%;
@@ -119,6 +119,8 @@ header {
       position: absolute;
       top: 1px;
       margin: 1em;
+      text-align: center;
+      font-weight: bold;
 
       a,
       & p {
@@ -138,6 +140,12 @@ header {
       a,
       & p {
         visibility: visible;
+        color: goldenrod;
+      }
+
+      a:visited,
+      a:active {
+        color: goldenrod;
       }
     }
   }
@@ -152,7 +160,7 @@ h3 {
 .social {
   font-size: 40px;
   min-width: 50vw;
-  color: black;
+  color: goldenrod;
   padding: 1em;
   list-style: none;
   display: flex;
@@ -161,5 +169,9 @@ h3 {
 
   a {
     text-decoration: none;
+  }
+
+  a:visited {
+    color: goldenrod;
   }
 }
