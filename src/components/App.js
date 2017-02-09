@@ -57,7 +57,6 @@ class App extends Component {
       <Tarot />
       <Portfolio repos={this.state.repos} />
       {/* <Blogs /> */}
-      <Tarot />
       <SocialMedia />
       <div className={styles.antlers} />
       <footer>
