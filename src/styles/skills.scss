@@ -1,0 +1,139 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+fieldset,
+input,
+textarea,
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  margin: 2em;
+  width: 22%;
+
+  .col {
+    padding: 15px;
+    background-color: #f3f4f5;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border: 8px solid #e5e5e5;
+  }
+
+  .col h3 {
+    padding: 4px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    background: #ffc000;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+
+  .skill {
+    list-style: none;
+    padding-top: 20px;
+  }
+
+  .skill li {
+    background: #e5e5e5;
+    margin: 0 0 8px;
+    border-radius: 5px;
+    height: 25px;
+    position: relative;
+  }
+
+  .skill em {
+    font-style: normal;
+    font-weight: bold;
+    color: #2d3438;
+    position: relative;
+    padding: 8px;
+    line-height: 25px;
+  }
+
+  .expand {
+    background: #ffc000;
+    position: absolute;
+    border-radius: 5px;
+    height: 100%;
+  }
+
+  #HTML {
+    width: 100%;
+    -webkit-animation: html5 2s linear;
+  }
+
+  @-webkit-keyframes html5 {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+
+  #CSS {
+    width: 95%;
+    -webkit-animation: css3 2s linear;
+  }
+
+  @-webkit-keyframes css3 {
+    0% { width: 0%; }
+    100% { width: 70%; }
+  }
+
+  #JS {
+    width: 65%;
+    -webkit-animation: js 2s linear;
+  }
+
+  @-webkit-keyframes js {
+    0% { width: 0%; }
+    100% { width: 65%; }
+  }
+
+  #React {
+    width: 50%;
+    -webkit-animation: react 2s linear;
+  }
+
+  @-webkit-keyframes react {
+    0% { width: 0%; }
+    100% { width: 50%; }
+  }
+
+  #WP {
+    width: 50%;
+    -webkit-animation: wordpress 2s linear;
+  }
+
+  @-webkit-keyframes wordpress {
+    0% { width: 0%; }
+    100% { width: 50%; }
+  }
+
+  #skate {
+    width: 85%;
+    -webkit-animation: skate 2s linear;
+  }
+
+  @-webkit-keyframes skate {
+    0% { width: 0%; }
+    100% { width: 85%; }
+  }
+}

@@ -90,14 +90,9 @@ header {
   }
 }
 
-.tarot {
-  height: 400px;
-  width: 400px;
-
-  img {
-    height: 100%;
-    width: 100%;
-  }
+h1 {
+  margin: 2em;
+  text-align: center;
 }
 
 .portfolio {
@@ -135,6 +130,10 @@ header {
       a,
       & p {
         visibility: hidden;
+      }
+
+      p {
+        margin: 1em;
       }
     }
 
@@ -179,9 +178,11 @@ h3 {
 
   a {
     text-decoration: none;
+    color: goldenrod;
   }
 
-  a:visited {
+  a:visited,
+  a:active {
     color: goldenrod;
   }
 }

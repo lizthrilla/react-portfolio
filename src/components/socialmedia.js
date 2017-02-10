@@ -26,7 +26,8 @@ class SocialMedia extends Component {
         <li><IconLink icon='github_alt' set='dev' url={'http://github.com/lizthrilla'} /> </li>
         <li><IconLink icon='twitter' url={'http://twitter.com/liztiller'} /> </li>
         <li><IconLink icon='linkedin' url={'https://www.linkedin.com/in/elizabeth-tiller-3965298/'} /></li>
-        <li><IconLink icon='medium' url={'https://medium.com/@liztiller'} /></li>
+        <li><IconLink icon='envelope' url={'mailto:elizabeth.tiller@gmail.com'} /></li>
+        {/* <li><IconLink icon='medium' url={'https://medium.com/@liztiller'} /></li> */}
       </ul>
     </div>
   }

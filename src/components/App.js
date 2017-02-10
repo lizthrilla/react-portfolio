@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import Header from './header'
 import Portfolio from './portfolio'
-// import Blogs from './blogs'
+import Resume from './resume'
 import SocialMedia from './socialmedia'
 import styles from '../styles/screen.scss'
-import Tarot from './Tarot'
+import Blogs from './blogs'
+// import Skills from './Skills'
 
 class App extends Component {
 
@@ -54,9 +55,10 @@ class App extends Component {
     return <div className={styles.main}>
       <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio}
         email={this.state.email} />
-      <Tarot />
+      <Resume />
+      <Blogs />
+      <h1>Homework and Class Projects</h1>
       <Portfolio repos={this.state.repos} />
-      {/* <Blogs /> */}
       <SocialMedia />
       <div className={styles.antlers} />
       <footer>

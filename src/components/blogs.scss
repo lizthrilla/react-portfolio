@@ -3,6 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 
   .blogHead {
     background-image: url('../styles/goldGreyGeo.png');
@@ -14,7 +17,7 @@
   }
 
   .blogText {
-    height: 110px;
+    height: 200px;
     width: 75%;
     border: 1px solid #888;
     border-radius: 0 0 10px 10px;
@@ -23,6 +26,69 @@
       margin-left: 10px;
       margin-right: 10px;
       font-family: 'Roboto Slab', serif;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+h1 {
+  margin-bottom: 0;
+  // $duration: 0.2;
+  // $easing: ease-in-out;
+
+  [data-wipe] {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #445561;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #445561;
+    overflow: hidden;
+
+    ::before,
+    ::after {
+      content: attr(data-wipe);
+      padding-top: inherit;
+      padding-bottom: inherit;
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      color: #f1f1f2;
+      background: #445561;
+    }
+
+    ::before {
+      left: 0;
+      text-indent: 18px;
+      width: 0;
+    }
+
+    ::after {
+      padding-left: inherit;
+      padding-right: inherit;
+      left: 100%;
+      text-indent: calc(-100% - 36px);
+      transition: 0.2s ease-in-out;
+    }
+
+    &:hover {
+      ::before {
+        width: 100%;
+        transition: width 0.2s ease-in-out;
+      }
+
+      ::after {
+        left: 0;
+        text-indent: 0;
+        transition: 0s 0.2s ease-in-out;
+        background-color: goldenrod;
+        color: white;
+      }
     }
   }
 }
