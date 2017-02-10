@@ -21,7 +21,7 @@ class SocialMedia extends Component {
 
   render () {
     return <div>
-      <h3> Stay Connected with Me! </h3>
+      {/* <h3> Stay Connected with Me! </h3> */}
       <ul className={styles.social}>
         <li><IconLink icon='github_alt' set='dev' url={'http://github.com/lizthrilla'} /> </li>
         <li><IconLink icon='twitter' url={'http://twitter.com/liztiller'} /> </li>
