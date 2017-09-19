@@ -6,7 +6,7 @@ class Krewe extends Component {
   render () {
     return <section className={styles.finalProject}>
       <div className={styles.project}>
-        <a href='http://krewewomensrugby.com'>
+        <a href='http://womenskrewe.lizthrilla.surge.sh'>
           <img className={styles.tarot} src={require('./kreweHome.png')} />
         </a>
         <div className={styles.imageText}>
