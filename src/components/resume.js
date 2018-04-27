@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import Skills from './Skills'
 import Tarot from './Tarot'
 import styles from '../styles/resume.scss'
-import Krewe from './Krewe'
+// import Krewe from './Krewe'
 
 class Resume extends Component {
 
@@ -13,7 +13,7 @@ class Resume extends Component {
       {/* <Education /> */}
       <Tarot />
       <Skills />
-      <Krewe />
+      {/* <Krewe /> */}
     </section>
   }
 }

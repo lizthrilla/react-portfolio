@@ -9,11 +9,11 @@ class Skills extends Component {
         <div className={styles.col}>
           <h3>Skills Set</h3>
           <ul className={styles.skill}>
-            <li><span className={styles.expand} id={styles.HTML} /><em>HTML 5</em></li>
-            <li><span className={styles.expand} id={styles.CSS} /><em>CSS 3</em></li>
+            <li><span className={styles.expand} id={styles.HTML} /><em>HTML/CSS</em></li>
             <li><span className={styles.expand} id={styles.JS} /><em>Javascript</em></li>
             <li><span className={styles.expand} id={styles.React} /><em>React</em></li>
-            <li><span className={styles.expand} id={styles.wp} /><em>WordPress</em></li>
+            <li><span className={styles.expand} id={styles.RN} /><em>React Native</em></li>
+            <li><span className={styles.expand} id={styles.Rails} /><em>Rails</em></li>
             <li><span className={styles.expand} id={styles.skate} /><em>Roller Skating</em></li>
           </ul>
         </div>

@@ -17,22 +17,19 @@
   }
 
   .blogText {
-    height: 200px;
     width: 75%;
     border: 1px solid #888;
     border-radius: 0 0 10px 10px;
 
     p {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin: 2em;
       font-family: 'Roboto Slab', serif;
-      margin-bottom: 1em;
     }
   }
 }
 
 h1 {
-  margin-bottom: 0;
+  margin: 2em;
   // $duration: 0.2;
   // $easing: ease-in-out;
 

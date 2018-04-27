@@ -26,7 +26,15 @@ blockquote {
 
 .container {
   margin: 2em;
-  width: 22%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 5px #888;
+  border-radius: 10px;
+  // width: 50%;
+  height: 310px;
+  width: 300px;
 
   .col {
     padding: 15px;
@@ -98,7 +106,7 @@ blockquote {
   }
 
   #JS {
-    width: 65%;
+    width: 80%;
     -webkit-animation: js 2s linear;
   }
 
@@ -108,7 +116,7 @@ blockquote {
   }
 
   #React {
-    width: 50%;
+    width: 70%;
     -webkit-animation: react 2s linear;
   }
 
@@ -117,7 +125,17 @@ blockquote {
     100% { width: 50%; }
   }
 
-  #WP {
+  #RN {
+    width: 60%;
+    -webkit-animation: react 2s linear;
+  }
+
+  @-webkit-keyframes react {
+    0% { width: 0%; }
+    100% { width: 50%; }
+  }
+
+  #Rails {
     width: 50%;
     -webkit-animation: wordpress 2s linear;
   }
